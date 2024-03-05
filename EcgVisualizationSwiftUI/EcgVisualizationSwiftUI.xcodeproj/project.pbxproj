@@ -21,6 +21,7 @@
 		9B76451C2B970755009F83DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B76451F2B970755009F83DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B7645262B970841009F83DC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9B7645282B970E4E009F83DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +54,7 @@
 		9B7645172B970754009F83DC /* EcgVisualizationSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				9B7645282B970E4E009F83DC /* Info.plist */,
 				9B7645182B970754009F83DC /* EcgVisualizationSwiftUIApp.swift */,
 				9B76451A2B970754009F83DC /* ContentView.swift */,
 				9B7645262B970841009F83DC /* ViewModel.swift */,
@@ -279,6 +281,8 @@
 				DEVELOPMENT_TEAM = S76GJ3LVAF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EcgVisualizationSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For ECG Data Visualization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +312,8 @@
 				DEVELOPMENT_TEAM = S76GJ3LVAF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EcgVisualizationSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "For ECG Data Visualization";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -14,6 +14,7 @@ import SwiftUI
     private var centralManager: CBCentralManager!
     private var peripheral: CBPeripheral!
     var ecgValue: Int = 0
+    var timestamp: Int = 0
 
     override init() {
         super.init()
@@ -66,8 +67,10 @@ import SwiftUI
                     do {
                         if let jsonDict = try JSONSerialization.jsonObject(with: jsonData, options: []) as? [String: Any] {
                             if let ecgValue = jsonDict["ecg_data"] as? Int {
-                                print("ECG Value: \(ecgValue)")
                                 self.ecgValue = ecgValue // Update property
+                            }
+                            if let timestamp = jsonDict["timestamp"] as? Int {
+                                self.timestamp = timestamp // Update property
                             }
                         }
                     } catch {

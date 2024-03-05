@@ -5,6 +5,7 @@
 //  Created by intiser Ahmed on 05/03/2024.
 //
 
+import Charts
 import SwiftUI
 
 struct ContentView: View {
